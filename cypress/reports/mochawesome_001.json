@@ -1,0 +1,468 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 16,
+    "passes": 7,
+    "pending": 0,
+    "failures": 9,
+    "start": "2023-08-22T22:43:33.789Z",
+    "end": "2023-08-22T22:44:13.174Z",
+    "duration": 39385,
+    "testsRegistered": 16,
+    "passPercent": 43.75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8c90cee1-8255-4b3b-a7e3-e9dc235cb5c5",
+      "title": "",
+      "fullFile": "cypress/e2e/16-18.footer.cy.js",
+      "file": "cypress/e2e/16-18.footer.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a26879d3-f615-43c1-afc0-42dcdc22ffeb",
+          "title": "16 - Implemente o menu inferior posicionando-o de forma fixa e contendo 2 ícones: um para comidas e outro para bebidas",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "O menu inferior existe e contém os ícones corretos",
+              "fullTitle": "16 - Implemente o menu inferior posicionando-o de forma fixa e contendo 2 ícones: um para comidas e outro para bebidas O menu inferior existe e contém os ícones corretos",
+              "timedOut": null,
+              "duration": 1592,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/meals');\ncy.get('[data-testid=\"footer\"]');\ncy.get('[data-testid=\"drinks-bottom-btn\"]').should('have.attr', 'src').should('include', 'drinkIcon');\ncy.get('[data-testid=\"meals-bottom-btn\"]').should('have.attr', 'src').should('include', 'mealIcon');",
+              "err": {
+                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > Profile is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > Profile is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at App (http://localhost:3000/src/App.tsx?t=1692743527555:83:48)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:12169:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:14919:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19759:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19192:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19131:13)",
+                "diff": null
+              },
+              "uuid": "5e9f78a2-43c3-4cac-be87-575122b66cf1",
+              "parentUUID": "a26879d3-f615-43c1-afc0-42dcdc22ffeb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O menu inferior deve ficar fixado sempre ao final da página",
+              "fullTitle": "16 - Implemente o menu inferior posicionando-o de forma fixa e contendo 2 ícones: um para comidas e outro para bebidas O menu inferior deve ficar fixado sempre ao final da página",
+              "timedOut": null,
+              "duration": 741,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/meals');\ncy.get('[data-testid=\"footer\"]').should('have.css', 'position', 'fixed');\ncy.get('[data-testid=\"footer\"]').should('have.css', 'bottom', '0px');",
+              "err": {
+                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > Profile is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > Profile is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at App (http://localhost:3000/src/App.tsx?t=1692743527555:83:48)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:12169:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:14919:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19759:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19192:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19131:13)",
+                "diff": null
+              },
+              "uuid": "3c812c24-5781-4c63-ad0c-8ee3a22c7519",
+              "parentUUID": "a26879d3-f615-43c1-afc0-42dcdc22ffeb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica a cobertura de 45% do Componente Footer",
+              "fullTitle": "16 - Implemente o menu inferior posicionando-o de forma fixa e contendo 2 ícones: um para comidas e outro para bebidas Verifica a cobertura de 45% do Componente Footer",
+              "timedOut": null,
+              "duration": 10644,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.getCoverage().its('Footer.functions.pct', {\n  timeout: 0\n}).should('be.gte', 45.00);\ncy.getCoverage().its('Footer.branches.pct', {\n  timeout: 0\n}).should('be.gte', 45.00);",
+              "err": {
+                "message": "CypressError: `cy.task('getCoverage')` failed with the following error:\n\n> Command failed: npm run cy-coverage ./src\nstderr | src/tests/App.test.tsx > Farewell, front-end\nError: Uncaught [ReferenceError: Profile is not defined]\n    at reportException (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)\n    at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n    at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n    at HTMLUnknownElement.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)\n    at Object.invokeGuardedCallbackDev (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4213:16)\n    at invokeGuardedCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4277:31)\n    at beginWork$1 (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:27451:7)\n    at performUnitOfWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:26560:12) ReferenceError: Profile is not defined\n    at App (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/src/App.tsx:24:41)\n    at renderWithHooks (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:16305:18)\n    at mountIndeterminateComponent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:20074:13)\n    at beginWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:21587:16)\n    at HTMLUnknownElement.callCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4164:14)\n    at HTMLUnknownElement.callTheUserObjectsOperation (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)\n    at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n    at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\nError: Uncaught [ReferenceError: Profile is not defined]\n    at reportException (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)\n    at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n    at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n    at HTMLUnknownElement.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)\n    at Object.invokeGuardedCallbackDev (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4213:16)\n    at invokeGuardedCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4277:31)\n    at beginWork$1 (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:27451:7)\n    at performUnitOfWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:26560:12) ReferenceError: Profile is not defined\n    at App (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/src/App.tsx:24:41)\n    at renderWithHooks (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:16305:18)\n    at mountIndeterminateComponent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:20074:13)\n    at beginWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:21587:16)\n    at HTMLUnknownElement.callCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4164:14)\n    at HTMLUnknownElement.callTheUserObjectsOperation (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)\n    at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n    at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\nThe above error occurred in the <App> component:\n\n    at App (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/src/App.tsx:88:69)\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://reactjs.org/link/error-boundaries to learn more about error boundaries.\n\n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  src/tests/App.test.tsx > Farewell, front-end\nReferenceError: Profile is not defined\n ❯ App src/App.tsx:24:41\n     22|       <Route path=\"/meals\" element={ <FoodsRecipes /> } />\n     23|       <Route path=\"/drinks\" element={ <DrinksRecipes /> } />\n     24|       <Route path=\"/profile\" element={ <Profile /> } />\n       |                                         ^\n     25|       <Route path=\"/done-recipes\" element={ <Recipes /> } />\n     26|     <Route path=\"/favorite-recipes\" element={ <FavoritsRecipes /> } />\n ❯ renderWithHooks node_modules/react-dom/cjs/react-dom.development.js:16305:18\n ❯ mountIndeterminateComponent node_modules/react-dom/cjs/react-dom.development.js:20074:13\n ❯ beginWork node_modules/react-dom/cjs/react-dom.development.js:21587:16\n ❯ beginWork$1 node_modules/react-dom/cjs/react-dom.development.js:27426:14\n ❯ performUnitOfWork node_modules/react-dom/cjs/react-dom.development.js:26560:12\n ❯ workLoopSync node_modules/react-dom/cjs/react-dom.development.js:26466:5\n ❯ renderRootSync node_modules/react-dom/cjs/react-dom.development.js:26434:7\n ❯ recoverFromConcurrentError node_modules/react-dom/cjs/react-dom.development.js:25850:20\n ❯ performConcurrentWorkOnRoot node_modules/react-dom/cjs/react-dom.development.js:25750:22\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n\nhttps://on.cypress.io/api/task",
+                "estack": "CypressError: `cy.task('getCoverage')` failed with the following error:\n\n> Command failed: npm run cy-coverage ./src\nstderr | src/tests/App.test.tsx > Farewell, front-end\nError: Uncaught [ReferenceError: Profile is not defined]\n    at reportException (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)\n    at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n    at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n    at HTMLUnknownElement.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)\n    at Object.invokeGuardedCallbackDev (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4213:16)\n    at invokeGuardedCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4277:31)\n    at beginWork$1 (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:27451:7)\n    at performUnitOfWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:26560:12) ReferenceError: Profile is not defined\n    at App (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/src/App.tsx:24:41)\n    at renderWithHooks (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:16305:18)\n    at mountIndeterminateComponent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:20074:13)\n    at beginWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:21587:16)\n    at HTMLUnknownElement.callCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4164:14)\n    at HTMLUnknownElement.callTheUserObjectsOperation (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)\n    at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n    at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\nError: Uncaught [ReferenceError: Profile is not defined]\n    at reportException (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)\n    at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n    at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n    at HTMLUnknownElement.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)\n    at Object.invokeGuardedCallbackDev (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4213:16)\n    at invokeGuardedCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4277:31)\n    at beginWork$1 (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:27451:7)\n    at performUnitOfWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:26560:12) ReferenceError: Profile is not defined\n    at App (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/src/App.tsx:24:41)\n    at renderWithHooks (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:16305:18)\n    at mountIndeterminateComponent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:20074:13)\n    at beginWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:21587:16)\n    at HTMLUnknownElement.callCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4164:14)\n    at HTMLUnknownElement.callTheUserObjectsOperation (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)\n    at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n    at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\nThe above error occurred in the <App> component:\n\n    at App (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/src/App.tsx:88:69)\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://reactjs.org/link/error-boundaries to learn more about error boundaries.\n\n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  src/tests/App.test.tsx > Farewell, front-end\nReferenceError: Profile is not defined\n ❯ App src/App.tsx:24:41\n     22|       <Route path=\"/meals\" element={ <FoodsRecipes /> } />\n     23|       <Route path=\"/drinks\" element={ <DrinksRecipes /> } />\n     24|       <Route path=\"/profile\" element={ <Profile /> } />\n       |                                         ^\n     25|       <Route path=\"/done-recipes\" element={ <Recipes /> } />\n     26|     <Route path=\"/favorite-recipes\" element={ <FavoritsRecipes /> } />\n ❯ renderWithHooks node_modules/react-dom/cjs/react-dom.development.js:16305:18\n ❯ mountIndeterminateComponent node_modules/react-dom/cjs/react-dom.development.js:20074:13\n ❯ beginWork node_modules/react-dom/cjs/react-dom.development.js:21587:16\n ❯ beginWork$1 node_modules/react-dom/cjs/react-dom.development.js:27426:14\n ❯ performUnitOfWork node_modules/react-dom/cjs/react-dom.development.js:26560:12\n ❯ workLoopSync node_modules/react-dom/cjs/react-dom.development.js:26466:5\n ❯ renderRootSync node_modules/react-dom/cjs/react-dom.development.js:26434:7\n ❯ recoverFromConcurrentError node_modules/react-dom/cjs/react-dom.development.js:25850:20\n ❯ performConcurrentWorkOnRoot node_modules/react-dom/cjs/react-dom.development.js:25750:22\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n\nhttps://on.cypress.io/api/task\n    at <unknown> (http://localhost:3000/__cypress/runner/cypress_runner.js:145912:78)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:11318:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:9253:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:9310:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:9355:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:9431:18)\n    at _drainQueueStep (http://localhost:3000/__cypress/runner/cypress_runner.js:6025:12)\n    at _drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:6018:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:6034:5)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:5904:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/support/commands.js:26:45)\n\nFrom Node.js Internals:\n  Error: Command failed: npm run cy-coverage ./src\n  stderr | src/tests/App.test.tsx > Farewell, front-end\n  Error: Uncaught [ReferenceError: Profile is not defined]\n      at reportException (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)\n      at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)\n      at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n      at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n      at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n      at HTMLUnknownElement.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)\n      at Object.invokeGuardedCallbackDev (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4213:16)\n      at invokeGuardedCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4277:31)\n      at beginWork$1 (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:27451:7)\n  at performUnitOfWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:26560:12) ReferenceError: Profile is not defined\n  at App (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/src/App.tsx:24:41)\n  at renderWithHooks (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:16305:18)\n  at mountIndeterminateComponent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:20074:13)\n  at beginWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:21587:16)\n  at HTMLUnknownElement.callCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4164:14)\n  at HTMLUnknownElement.callTheUserObjectsOperation (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)\n  at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)\n  at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n  at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n  at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n  Error: Uncaught [ReferenceError: Profile is not defined]\n      at reportException (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)\n      at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)\n      at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n      at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n      at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n      at HTMLUnknownElement.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)\n      at Object.invokeGuardedCallbackDev (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4213:16)\n      at invokeGuardedCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4277:31)\n      at beginWork$1 (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:27451:7)\n  at performUnitOfWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:26560:12) ReferenceError: Profile is not defined\n  at App (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/src/App.tsx:24:41)\n  at renderWithHooks (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:16305:18)\n  at mountIndeterminateComponent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:20074:13)\n  at beginWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:21587:16)\n  at HTMLUnknownElement.callCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4164:14)\n  at HTMLUnknownElement.callTheUserObjectsOperation (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)\n  at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)\n  at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n  at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n  at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n  The above error occurred in the <App> component:\n  \n      at App (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/src/App.tsx:88:69)\n  \n  Consider adding an error boundary to your tree to customize error handling behavior.\n  Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.\n  \n  ⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯\n  \n   FAIL  src/tests/App.test.tsx > Farewell, front-end\n  ReferenceError: Profile is not defined\n   ❯ App src/App.tsx:24:41\n       22|       <Route path=\"/meals\" element={ <FoodsRecipes /> } />\n   23|       <Route path=\"/drinks\" element={ <DrinksRecipes /> } />\n   24|       <Route path=\"/profile\" element={ <Profile /> } />\n     |                                         ^\n   25|       <Route path=\"/done-recipes\" element={ <Recipes /> } />\n   26|     <Route path=\"/favorite-recipes\" element={ <FavoritsRecipes /> } />\n   ❯ renderWithHooks node_modules/react-dom/cjs/react-dom.development.js:16305:18\n   ❯ mountIndeterminateComponent node_modules/react-dom/cjs/react-dom.development.js:20074:13\n   ❯ beginWork node_modules/react-dom/cjs/react-dom.development.js:21587:16\n   ❯ beginWork$1 node_modules/react-dom/cjs/react-dom.development.js:27426:14\n   ❯ performUnitOfWork node_modules/react-dom/cjs/react-dom.development.js:26560:12\n   ❯ workLoopSync node_modules/react-dom/cjs/react-dom.development.js:26466:5\n   ❯ renderRootSync node_modules/react-dom/cjs/react-dom.development.js:26434:7\n   ❯ recoverFromConcurrentError node_modules/react-dom/cjs/react-dom.development.js:25850:20\n   ❯ performConcurrentWorkOnRoot node_modules/react-dom/cjs/react-dom.development.js:25750:22\n  \n  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n  \n  \n      at ChildProcess.exithandler (node:child_process:419:12)\n      at ChildProcess.emit (node:events:513:28)\n      at ChildProcess.emit (node:domain:489:12)\n      at maybeClose (node:internal/child_process:1091:16)\n      at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5)",
+                "diff": null
+              },
+              "uuid": "a089051e-a120-4be6-bdc5-8f7d90342dcc",
+              "parentUUID": "a26879d3-f615-43c1-afc0-42dcdc22ffeb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "5e9f78a2-43c3-4cac-be87-575122b66cf1",
+            "3c812c24-5781-4c63-ad0c-8ee3a22c7519",
+            "a089051e-a120-4be6-bdc5-8f7d90342dcc"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 12977,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "1b313b11-8ab8-45e1-8132-a52fcc804859",
+          "title": "17 - Exiba o menu inferior apenas nas telas indicadas pelo protótipo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Rota \"/\": não deve ter footer",
+              "fullTitle": "17 - Exiba o menu inferior apenas nas telas indicadas pelo protótipo Rota \"/\": não deve ter footer",
+              "timedOut": null,
+              "duration": 794,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/');\nhasNoFooter();",
+              "err": {},
+              "uuid": "c5ef0703-109d-41f6-a7b5-0365594d4724",
+              "parentUUID": "1b313b11-8ab8-45e1-8132-a52fcc804859",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Rota \"/meals\": deve ter footer",
+              "fullTitle": "17 - Exiba o menu inferior apenas nas telas indicadas pelo protótipo Rota \"/meals\": deve ter footer",
+              "timedOut": null,
+              "duration": 651,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "visitWithLocalStorage('http://localhost:3000/meals');\nhasFooter();",
+              "err": {
+                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > Profile is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > Profile is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at App (http://localhost:3000/src/App.tsx?t=1692743527555:83:48)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:12169:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:14919:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19759:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19192:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19131:13)",
+                "diff": null
+              },
+              "uuid": "ef96caa4-6859-4004-8416-046223c63c4f",
+              "parentUUID": "1b313b11-8ab8-45e1-8132-a52fcc804859",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Rota \"/drinks\": deve ter footer",
+              "fullTitle": "17 - Exiba o menu inferior apenas nas telas indicadas pelo protótipo Rota \"/drinks\": deve ter footer",
+              "timedOut": null,
+              "duration": 644,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "visitWithLocalStorage('http://localhost:3000/drinks');\nhasFooter();",
+              "err": {
+                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > Profile is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > Profile is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at App (http://localhost:3000/src/App.tsx?t=1692743527555:83:48)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:12169:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:14919:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19759:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19192:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19131:13)",
+                "diff": null
+              },
+              "uuid": "bd4bf135-f363-4778-97b2-0f65ad45705f",
+              "parentUUID": "1b313b11-8ab8-45e1-8132-a52fcc804859",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Rota \"/meals/{id-da-receita}\": não deve ter footer",
+              "fullTitle": "17 - Exiba o menu inferior apenas nas telas indicadas pelo protótipo Rota \"/meals/{id-da-receita}\": não deve ter footer",
+              "timedOut": null,
+              "duration": 600,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "visitWithLocalStorage('http://localhost:3000/meals/52771');\nhasNoFooter();",
+              "err": {},
+              "uuid": "f793f21a-1848-43f5-bc35-8e5ae9213d2e",
+              "parentUUID": "1b313b11-8ab8-45e1-8132-a52fcc804859",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Rota \"drinks/{id-da-receita}\": não deve ter footer",
+              "fullTitle": "17 - Exiba o menu inferior apenas nas telas indicadas pelo protótipo Rota \"drinks/{id-da-receita}\": não deve ter footer",
+              "timedOut": null,
+              "duration": 650,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "visitWithLocalStorage('http://localhost:3000/drinks/178319');\nhasNoFooter();",
+              "err": {},
+              "uuid": "cabb8985-58e3-4f73-b61d-9d5fb1ad9b8b",
+              "parentUUID": "1b313b11-8ab8-45e1-8132-a52fcc804859",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Rota \"/meals/{id-da-receita}/in-progress\": não deve ter footer",
+              "fullTitle": "17 - Exiba o menu inferior apenas nas telas indicadas pelo protótipo Rota \"/meals/{id-da-receita}/in-progress\": não deve ter footer",
+              "timedOut": null,
+              "duration": 839,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "visitWithLocalStorage('http://localhost:3000/meals/52771/in-progress');\nhasNoFooter();",
+              "err": {},
+              "uuid": "3cbc5ab5-117c-4e42-8813-a0a1c6184f4e",
+              "parentUUID": "1b313b11-8ab8-45e1-8132-a52fcc804859",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Rota \"/drinks/{id-da-receita}/in-progress\": não deve ter footer",
+              "fullTitle": "17 - Exiba o menu inferior apenas nas telas indicadas pelo protótipo Rota \"/drinks/{id-da-receita}/in-progress\": não deve ter footer",
+              "timedOut": null,
+              "duration": 762,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "visitWithLocalStorage('http://localhost:3000/drinks/178319/in-progress');\nhasNoFooter();",
+              "err": {},
+              "uuid": "abbe27ec-f532-4f6c-adc7-dcf7d9157d62",
+              "parentUUID": "1b313b11-8ab8-45e1-8132-a52fcc804859",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Rota \"/profile\": deve ter footer",
+              "fullTitle": "17 - Exiba o menu inferior apenas nas telas indicadas pelo protótipo Rota \"/profile\": deve ter footer",
+              "timedOut": null,
+              "duration": 683,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "visitWithLocalStorage('http://localhost:3000/profile');\nhasFooter();",
+              "err": {
+                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > Profile is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > Profile is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at App (http://localhost:3000/src/App.tsx?t=1692743527555:83:48)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:12169:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:14919:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19759:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19192:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19131:13)",
+                "diff": null
+              },
+              "uuid": "a57d5700-88bf-4628-9ade-bc311c383248",
+              "parentUUID": "1b313b11-8ab8-45e1-8132-a52fcc804859",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Rota \"/done-recipes\": não deve ter footer",
+              "fullTitle": "17 - Exiba o menu inferior apenas nas telas indicadas pelo protótipo Rota \"/done-recipes\": não deve ter footer",
+              "timedOut": null,
+              "duration": 761,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "visitWithLocalStorage('http://localhost:3000/done-recipes');\nhasNoFooter();",
+              "err": {},
+              "uuid": "e35c4721-b12b-4e9d-92e1-00db36dab528",
+              "parentUUID": "1b313b11-8ab8-45e1-8132-a52fcc804859",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Rota \"/favorite-recipes\": não deve ter footer",
+              "fullTitle": "17 - Exiba o menu inferior apenas nas telas indicadas pelo protótipo Rota \"/favorite-recipes\": não deve ter footer",
+              "timedOut": null,
+              "duration": 778,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "visitWithLocalStorage('http://localhost:3000/favorite-recipes');\nhasNoFooter();",
+              "err": {},
+              "uuid": "f2da6b6a-e6ed-4ec5-8495-39931f8b5b89",
+              "parentUUID": "1b313b11-8ab8-45e1-8132-a52fcc804859",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c5ef0703-109d-41f6-a7b5-0365594d4724",
+            "f793f21a-1848-43f5-bc35-8e5ae9213d2e",
+            "cabb8985-58e3-4f73-b61d-9d5fb1ad9b8b",
+            "3cbc5ab5-117c-4e42-8813-a0a1c6184f4e",
+            "abbe27ec-f532-4f6c-adc7-dcf7d9157d62",
+            "e35c4721-b12b-4e9d-92e1-00db36dab528",
+            "f2da6b6a-e6ed-4ec5-8495-39931f8b5b89"
+          ],
+          "failures": [
+            "ef96caa4-6859-4004-8416-046223c63c4f",
+            "bd4bf135-f363-4778-97b2-0f65ad45705f",
+            "a57d5700-88bf-4628-9ade-bc311c383248"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7162,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "fd81206a-407f-4658-ad59-721f7daaef45",
+          "title": "18 - Redirecione a pessoa usuária para a tela correta ao clicar em cada ícone no menu inferior",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Redireciona para a lista de bebidas ao clicar no ícone de bebidas",
+              "fullTitle": "18 - Redirecione a pessoa usuária para a tela correta ao clicar em cada ícone no menu inferior Redireciona para a lista de bebidas ao clicar no ícone de bebidas",
+              "timedOut": null,
+              "duration": 855,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/meals');\ncy.get('[data-testid=\"drinks-bottom-btn\"]').click();\ncy.location().should(loc => expect(loc.pathname).to.eq('/drinks'));",
+              "err": {
+                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > Profile is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > Profile is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at App (http://localhost:3000/src/App.tsx?t=1692743527555:83:48)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:12169:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:14919:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19759:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19192:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19131:13)",
+                "diff": null
+              },
+              "uuid": "6fbfbd71-1ce6-45dd-b7ff-791c61785458",
+              "parentUUID": "fd81206a-407f-4658-ad59-721f7daaef45",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Redireciona para a lista de comidas ao clicar no ícone de comidas",
+              "fullTitle": "18 - Redirecione a pessoa usuária para a tela correta ao clicar em cada ícone no menu inferior Redireciona para a lista de comidas ao clicar no ícone de comidas",
+              "timedOut": null,
+              "duration": 786,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/drinks');\ncy.get('[data-testid=\"meals-bottom-btn\"]').click();\ncy.location().should(loc => expect(loc.pathname).to.eq('/meals'));",
+              "err": {
+                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > Profile is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > Profile is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at App (http://localhost:3000/src/App.tsx?t=1692743527555:83:48)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:12169:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:14919:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19759:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19192:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19131:13)",
+                "diff": null
+              },
+              "uuid": "4b20df36-544d-455d-8e79-5d6fbbf0e4ce",
+              "parentUUID": "fd81206a-407f-4658-ad59-721f7daaef45",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica a cobertura de 90% do Componente Footer",
+              "fullTitle": "18 - Redirecione a pessoa usuária para a tela correta ao clicar em cada ícone no menu inferior Verifica a cobertura de 90% do Componente Footer",
+              "timedOut": null,
+              "duration": 12154,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.getCoverage().its('Footer.functions.pct', {\n  timeout: 0\n}).should('be.gte', 90.00);\ncy.getCoverage().its('Footer.branches.pct', {\n  timeout: 0\n}).should('be.gte', 90.00);",
+              "err": {
+                "message": "CypressError: `cy.task('getCoverage')` failed with the following error:\n\n> Command failed: npm run cy-coverage ./src\nstderr | src/tests/App.test.tsx > Farewell, front-end\nError: Uncaught [ReferenceError: Profile is not defined]\n    at reportException (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)\n    at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n    at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n    at HTMLUnknownElement.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)\n    at Object.invokeGuardedCallbackDev (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4213:16)\n    at invokeGuardedCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4277:31)\n    at beginWork$1 (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:27451:7)\n    at performUnitOfWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:26560:12) ReferenceError: Profile is not defined\n    at App (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/src/App.tsx:24:41)\n    at renderWithHooks (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:16305:18)\n    at mountIndeterminateComponent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:20074:13)\n    at beginWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:21587:16)\n    at HTMLUnknownElement.callCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4164:14)\n    at HTMLUnknownElement.callTheUserObjectsOperation (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)\n    at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n    at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\nError: Uncaught [ReferenceError: Profile is not defined]\n    at reportException (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)\n    at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n    at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n    at HTMLUnknownElement.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)\n    at Object.invokeGuardedCallbackDev (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4213:16)\n    at invokeGuardedCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4277:31)\n    at beginWork$1 (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:27451:7)\n    at performUnitOfWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:26560:12) ReferenceError: Profile is not defined\n    at App (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/src/App.tsx:24:41)\n    at renderWithHooks (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:16305:18)\n    at mountIndeterminateComponent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:20074:13)\n    at beginWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:21587:16)\n    at HTMLUnknownElement.callCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4164:14)\n    at HTMLUnknownElement.callTheUserObjectsOperation (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)\n    at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n    at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\nThe above error occurred in the <App> component:\n\n    at App (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/src/App.tsx:88:69)\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://reactjs.org/link/error-boundaries to learn more about error boundaries.\n\n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  src/tests/App.test.tsx > Farewell, front-end\nReferenceError: Profile is not defined\n ❯ App src/App.tsx:24:41\n     22|       <Route path=\"/meals\" element={ <FoodsRecipes /> } />\n     23|       <Route path=\"/drinks\" element={ <DrinksRecipes /> } />\n     24|       <Route path=\"/profile\" element={ <Profile /> } />\n       |                                         ^\n     25|       <Route path=\"/done-recipes\" element={ <Recipes /> } />\n     26|     <Route path=\"/favorite-recipes\" element={ <FavoritsRecipes /> } />\n ❯ renderWithHooks node_modules/react-dom/cjs/react-dom.development.js:16305:18\n ❯ mountIndeterminateComponent node_modules/react-dom/cjs/react-dom.development.js:20074:13\n ❯ beginWork node_modules/react-dom/cjs/react-dom.development.js:21587:16\n ❯ beginWork$1 node_modules/react-dom/cjs/react-dom.development.js:27426:14\n ❯ performUnitOfWork node_modules/react-dom/cjs/react-dom.development.js:26560:12\n ❯ workLoopSync node_modules/react-dom/cjs/react-dom.development.js:26466:5\n ❯ renderRootSync node_modules/react-dom/cjs/react-dom.development.js:26434:7\n ❯ recoverFromConcurrentError node_modules/react-dom/cjs/react-dom.development.js:25850:20\n ❯ performConcurrentWorkOnRoot node_modules/react-dom/cjs/react-dom.development.js:25750:22\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n\nhttps://on.cypress.io/api/task",
+                "estack": "CypressError: `cy.task('getCoverage')` failed with the following error:\n\n> Command failed: npm run cy-coverage ./src\nstderr | src/tests/App.test.tsx > Farewell, front-end\nError: Uncaught [ReferenceError: Profile is not defined]\n    at reportException (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)\n    at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n    at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n    at HTMLUnknownElement.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)\n    at Object.invokeGuardedCallbackDev (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4213:16)\n    at invokeGuardedCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4277:31)\n    at beginWork$1 (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:27451:7)\n    at performUnitOfWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:26560:12) ReferenceError: Profile is not defined\n    at App (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/src/App.tsx:24:41)\n    at renderWithHooks (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:16305:18)\n    at mountIndeterminateComponent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:20074:13)\n    at beginWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:21587:16)\n    at HTMLUnknownElement.callCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4164:14)\n    at HTMLUnknownElement.callTheUserObjectsOperation (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)\n    at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n    at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\nError: Uncaught [ReferenceError: Profile is not defined]\n    at reportException (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)\n    at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n    at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n    at HTMLUnknownElement.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)\n    at Object.invokeGuardedCallbackDev (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4213:16)\n    at invokeGuardedCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4277:31)\n    at beginWork$1 (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:27451:7)\n    at performUnitOfWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:26560:12) ReferenceError: Profile is not defined\n    at App (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/src/App.tsx:24:41)\n    at renderWithHooks (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:16305:18)\n    at mountIndeterminateComponent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:20074:13)\n    at beginWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:21587:16)\n    at HTMLUnknownElement.callCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4164:14)\n    at HTMLUnknownElement.callTheUserObjectsOperation (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)\n    at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n    at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\nThe above error occurred in the <App> component:\n\n    at App (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/src/App.tsx:88:69)\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://reactjs.org/link/error-boundaries to learn more about error boundaries.\n\n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  src/tests/App.test.tsx > Farewell, front-end\nReferenceError: Profile is not defined\n ❯ App src/App.tsx:24:41\n     22|       <Route path=\"/meals\" element={ <FoodsRecipes /> } />\n     23|       <Route path=\"/drinks\" element={ <DrinksRecipes /> } />\n     24|       <Route path=\"/profile\" element={ <Profile /> } />\n       |                                         ^\n     25|       <Route path=\"/done-recipes\" element={ <Recipes /> } />\n     26|     <Route path=\"/favorite-recipes\" element={ <FavoritsRecipes /> } />\n ❯ renderWithHooks node_modules/react-dom/cjs/react-dom.development.js:16305:18\n ❯ mountIndeterminateComponent node_modules/react-dom/cjs/react-dom.development.js:20074:13\n ❯ beginWork node_modules/react-dom/cjs/react-dom.development.js:21587:16\n ❯ beginWork$1 node_modules/react-dom/cjs/react-dom.development.js:27426:14\n ❯ performUnitOfWork node_modules/react-dom/cjs/react-dom.development.js:26560:12\n ❯ workLoopSync node_modules/react-dom/cjs/react-dom.development.js:26466:5\n ❯ renderRootSync node_modules/react-dom/cjs/react-dom.development.js:26434:7\n ❯ recoverFromConcurrentError node_modules/react-dom/cjs/react-dom.development.js:25850:20\n ❯ performConcurrentWorkOnRoot node_modules/react-dom/cjs/react-dom.development.js:25750:22\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n\nhttps://on.cypress.io/api/task\n    at <unknown> (http://localhost:3000/__cypress/runner/cypress_runner.js:145912:78)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:11318:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:9253:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:9310:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:9355:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:9431:18)\n    at _drainQueueStep (http://localhost:3000/__cypress/runner/cypress_runner.js:6025:12)\n    at _drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:6018:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:6034:5)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:5904:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/support/commands.js:26:45)\n\nFrom Node.js Internals:\n  Error: Command failed: npm run cy-coverage ./src\n  stderr | src/tests/App.test.tsx > Farewell, front-end\n  Error: Uncaught [ReferenceError: Profile is not defined]\n      at reportException (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)\n      at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)\n      at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n      at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n      at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n      at HTMLUnknownElement.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)\n      at Object.invokeGuardedCallbackDev (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4213:16)\n      at invokeGuardedCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4277:31)\n      at beginWork$1 (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:27451:7)\n  at performUnitOfWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:26560:12) ReferenceError: Profile is not defined\n  at App (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/src/App.tsx:24:41)\n  at renderWithHooks (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:16305:18)\n  at mountIndeterminateComponent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:20074:13)\n  at beginWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:21587:16)\n  at HTMLUnknownElement.callCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4164:14)\n  at HTMLUnknownElement.callTheUserObjectsOperation (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)\n  at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)\n  at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n  at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n  at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n  Error: Uncaught [ReferenceError: Profile is not defined]\n      at reportException (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)\n      at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)\n      at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n      at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n      at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n      at HTMLUnknownElement.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)\n      at Object.invokeGuardedCallbackDev (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4213:16)\n      at invokeGuardedCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4277:31)\n      at beginWork$1 (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:27451:7)\n  at performUnitOfWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:26560:12) ReferenceError: Profile is not defined\n  at App (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/src/App.tsx:24:41)\n  at renderWithHooks (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:16305:18)\n  at mountIndeterminateComponent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:20074:13)\n  at beginWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:21587:16)\n  at HTMLUnknownElement.callCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4164:14)\n  at HTMLUnknownElement.callTheUserObjectsOperation (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)\n  at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)\n  at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n  at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n  at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n  The above error occurred in the <App> component:\n  \n      at App (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/src/App.tsx:88:69)\n  \n  Consider adding an error boundary to your tree to customize error handling behavior.\n  Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.\n  \n  ⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯\n  \n   FAIL  src/tests/App.test.tsx > Farewell, front-end\n  ReferenceError: Profile is not defined\n   ❯ App src/App.tsx:24:41\n       22|       <Route path=\"/meals\" element={ <FoodsRecipes /> } />\n   23|       <Route path=\"/drinks\" element={ <DrinksRecipes /> } />\n   24|       <Route path=\"/profile\" element={ <Profile /> } />\n     |                                         ^\n   25|       <Route path=\"/done-recipes\" element={ <Recipes /> } />\n   26|     <Route path=\"/favorite-recipes\" element={ <FavoritsRecipes /> } />\n   ❯ renderWithHooks node_modules/react-dom/cjs/react-dom.development.js:16305:18\n   ❯ mountIndeterminateComponent node_modules/react-dom/cjs/react-dom.development.js:20074:13\n   ❯ beginWork node_modules/react-dom/cjs/react-dom.development.js:21587:16\n   ❯ beginWork$1 node_modules/react-dom/cjs/react-dom.development.js:27426:14\n   ❯ performUnitOfWork node_modules/react-dom/cjs/react-dom.development.js:26560:12\n   ❯ workLoopSync node_modules/react-dom/cjs/react-dom.development.js:26466:5\n   ❯ renderRootSync node_modules/react-dom/cjs/react-dom.development.js:26434:7\n   ❯ recoverFromConcurrentError node_modules/react-dom/cjs/react-dom.development.js:25850:20\n   ❯ performConcurrentWorkOnRoot node_modules/react-dom/cjs/react-dom.development.js:25750:22\n  \n  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n  \n  \n      at ChildProcess.exithandler (node:child_process:419:12)\n      at ChildProcess.emit (node:events:513:28)\n      at ChildProcess.emit (node:domain:489:12)\n      at maybeClose (node:internal/child_process:1091:16)\n      at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5)",
+                "diff": null
+              },
+              "uuid": "a4bff30d-6722-4d9b-98d9-6b0ca4d8120f",
+              "parentUUID": "fd81206a-407f-4658-ad59-721f7daaef45",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "6fbfbd71-1ce6-45dd-b7ff-791c61785458",
+            "4b20df36-544d-455d-8e79-5d6fbbf0e4ce",
+            "a4bff30d-6722-4d9b-98d9-6b0ca4d8120f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 13795,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

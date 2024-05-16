@@ -1,0 +1,468 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 16,
+    "passes": 7,
+    "pending": 0,
+    "failures": 9,
+    "start": "2023-08-22T22:45:33.025Z",
+    "end": "2023-08-22T22:47:02.525Z",
+    "duration": 89500,
+    "testsRegistered": 16,
+    "passPercent": 43.75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e8c3440a-7e6b-4193-846e-e54962bd04b4",
+      "title": "",
+      "fullFile": "cypress/e2e/16-18.footer.cy.js",
+      "file": "cypress/e2e/16-18.footer.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9ba686b1-7341-46c8-8833-e256f9eb9dc9",
+          "title": "16 - Implemente o menu inferior posicionando-o de forma fixa e contendo 2 ícones: um para comidas e outro para bebidas",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "O menu inferior existe e contém os ícones corretos",
+              "fullTitle": "16 - Implemente o menu inferior posicionando-o de forma fixa e contendo 2 ícones: um para comidas e outro para bebidas O menu inferior existe e contém os ícones corretos",
+              "timedOut": null,
+              "duration": 1577,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/meals');\ncy.get('[data-testid=\"footer\"]');\ncy.get('[data-testid=\"drinks-bottom-btn\"]').should('have.attr', 'src').should('include', 'drinkIcon');\ncy.get('[data-testid=\"meals-bottom-btn\"]').should('have.attr', 'src').should('include', 'mealIcon');",
+              "err": {
+                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > Profile is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > Profile is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at App (http://localhost:3000/src/App.tsx?t=1692743527555:83:48)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:12169:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:14919:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19759:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19192:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19131:13)",
+                "diff": null
+              },
+              "uuid": "47bdfe2e-00c6-4fa3-966a-30e5d53f2308",
+              "parentUUID": "9ba686b1-7341-46c8-8833-e256f9eb9dc9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O menu inferior deve ficar fixado sempre ao final da página",
+              "fullTitle": "16 - Implemente o menu inferior posicionando-o de forma fixa e contendo 2 ícones: um para comidas e outro para bebidas O menu inferior deve ficar fixado sempre ao final da página",
+              "timedOut": null,
+              "duration": 731,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/meals');\ncy.get('[data-testid=\"footer\"]').should('have.css', 'position', 'fixed');\ncy.get('[data-testid=\"footer\"]').should('have.css', 'bottom', '0px');",
+              "err": {
+                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > Profile is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > Profile is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at App (http://localhost:3000/src/App.tsx?t=1692743527555:83:48)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:12169:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:14919:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19759:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19192:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=a3a0b116:19131:13)",
+                "diff": null
+              },
+              "uuid": "b2aec0e6-cb52-4714-99c9-353bda031281",
+              "parentUUID": "9ba686b1-7341-46c8-8833-e256f9eb9dc9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica a cobertura de 45% do Componente Footer",
+              "fullTitle": "16 - Implemente o menu inferior posicionando-o de forma fixa e contendo 2 ícones: um para comidas e outro para bebidas Verifica a cobertura de 45% do Componente Footer",
+              "timedOut": null,
+              "duration": 12179,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.getCoverage().its('Footer.functions.pct', {\n  timeout: 0\n}).should('be.gte', 45.00);\ncy.getCoverage().its('Footer.branches.pct', {\n  timeout: 0\n}).should('be.gte', 45.00);",
+              "err": {
+                "message": "CypressError: `cy.task('getCoverage')` failed with the following error:\n\n> Command failed: npm run cy-coverage ./src\nstderr | src/tests/App.test.tsx > Farewell, front-end\nError: Uncaught [Error: useRoutes() may be used only in the context of a <Router> component.]\n    at reportException (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)\n    at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n    at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n    at HTMLUnknownElement.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)\n    at Object.invokeGuardedCallbackDev (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4213:16)\n    at invokeGuardedCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4277:31)\n    at beginWork$1 (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:27451:7)\n    at performUnitOfWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:26560:12) Error: useRoutes() may be used only in the context of a <Router> component.\n    at Object.invariant [as UNSAFE_invariant] (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/@remix-run/router/history.ts:480:11)\n    at useRoutesImpl (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/hooks.tsx:350:3)\n    at useRoutes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/hooks.tsx:341:10)\n    at Routes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/components.tsx:463:10)\n    at renderWithHooks (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:16305:18)\n    at mountIndeterminateComponent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:20074:13)\n    at beginWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:21587:16)\n    at HTMLUnknownElement.callCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4164:14)\n    at HTMLUnknownElement.callTheUserObjectsOperation (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)\nError: Uncaught [Error: useRoutes() may be used only in the context of a <Router> component.]\n    at reportException (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)\n    at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n    at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n    at HTMLUnknownElement.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)\n    at Object.invokeGuardedCallbackDev (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4213:16)\n    at invokeGuardedCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4277:31)\n    at beginWork$1 (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:27451:7)\n    at performUnitOfWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:26560:12) Error: useRoutes() may be used only in the context of a <Router> component.\n    at Object.invariant [as UNSAFE_invariant] (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/@remix-run/router/history.ts:480:11)\n    at useRoutesImpl (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/hooks.tsx:350:3)\n    at useRoutes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/hooks.tsx:341:10)\n    at Routes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/components.tsx:463:10)\n    at renderWithHooks (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:16305:18)\n    at mountIndeterminateComponent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:20074:13)\n    at beginWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:21587:16)\n    at HTMLUnknownElement.callCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4164:14)\n    at HTMLUnknownElement.callTheUserObjectsOperation (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)\nThe above error occurred in the <Routes> component:\n\n    at Routes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/dist/umd/react-router.development.js:1147:7)\n    at App\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://reactjs.org/link/error-boundaries to learn more about error boundaries.\n\n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  src/tests/App.test.tsx > Farewell, front-end\nError: useRoutes() may be used only in the context of a <Router> component.\n ❯ Object.invariant [as UNSAFE_invariant] node_modules/@remix-run/router/history.ts:480:11\n ❯ useRoutesImpl node_modules/react-router/lib/hooks.tsx:350:3\n ❯ useRoutes node_modules/react-router/lib/hooks.tsx:341:10\n ❯ Routes node_modules/react-router/lib/components.tsx:463:10\n ❯ renderWithHooks node_modules/react-dom/cjs/react-dom.development.js:16305:18\n ❯ mountIndeterminateComponent node_modules/react-dom/cjs/react-dom.development.js:20074:13\n ❯ beginWork node_modules/react-dom/cjs/react-dom.development.js:21587:16\n ❯ beginWork$1 node_modules/react-dom/cjs/react-dom.development.js:27426:14\n ❯ performUnitOfWork node_modules/react-dom/cjs/react-dom.development.js:26560:12\n ❯ workLoopSync node_modules/react-dom/cjs/react-dom.development.js:26466:5\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n\nhttps://on.cypress.io/api/task",
+                "estack": "CypressError: `cy.task('getCoverage')` failed with the following error:\n\n> Command failed: npm run cy-coverage ./src\nstderr | src/tests/App.test.tsx > Farewell, front-end\nError: Uncaught [Error: useRoutes() may be used only in the context of a <Router> component.]\n    at reportException (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)\n    at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n    at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n    at HTMLUnknownElement.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)\n    at Object.invokeGuardedCallbackDev (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4213:16)\n    at invokeGuardedCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4277:31)\n    at beginWork$1 (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:27451:7)\n    at performUnitOfWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:26560:12) Error: useRoutes() may be used only in the context of a <Router> component.\n    at Object.invariant [as UNSAFE_invariant] (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/@remix-run/router/history.ts:480:11)\n    at useRoutesImpl (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/hooks.tsx:350:3)\n    at useRoutes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/hooks.tsx:341:10)\n    at Routes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/components.tsx:463:10)\n    at renderWithHooks (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:16305:18)\n    at mountIndeterminateComponent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:20074:13)\n    at beginWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:21587:16)\n    at HTMLUnknownElement.callCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4164:14)\n    at HTMLUnknownElement.callTheUserObjectsOperation (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)\nError: Uncaught [Error: useRoutes() may be used only in the context of a <Router> component.]\n    at reportException (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)\n    at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n    at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n    at HTMLUnknownElement.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)\n    at Object.invokeGuardedCallbackDev (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4213:16)\n    at invokeGuardedCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4277:31)\n    at beginWork$1 (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:27451:7)\n    at performUnitOfWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:26560:12) Error: useRoutes() may be used only in the context of a <Router> component.\n    at Object.invariant [as UNSAFE_invariant] (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/@remix-run/router/history.ts:480:11)\n    at useRoutesImpl (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/hooks.tsx:350:3)\n    at useRoutes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/hooks.tsx:341:10)\n    at Routes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/components.tsx:463:10)\n    at renderWithHooks (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:16305:18)\n    at mountIndeterminateComponent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:20074:13)\n    at beginWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:21587:16)\n    at HTMLUnknownElement.callCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4164:14)\n    at HTMLUnknownElement.callTheUserObjectsOperation (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)\nThe above error occurred in the <Routes> component:\n\n    at Routes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/dist/umd/react-router.development.js:1147:7)\n    at App\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://reactjs.org/link/error-boundaries to learn more about error boundaries.\n\n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  src/tests/App.test.tsx > Farewell, front-end\nError: useRoutes() may be used only in the context of a <Router> component.\n ❯ Object.invariant [as UNSAFE_invariant] node_modules/@remix-run/router/history.ts:480:11\n ❯ useRoutesImpl node_modules/react-router/lib/hooks.tsx:350:3\n ❯ useRoutes node_modules/react-router/lib/hooks.tsx:341:10\n ❯ Routes node_modules/react-router/lib/components.tsx:463:10\n ❯ renderWithHooks node_modules/react-dom/cjs/react-dom.development.js:16305:18\n ❯ mountIndeterminateComponent node_modules/react-dom/cjs/react-dom.development.js:20074:13\n ❯ beginWork node_modules/react-dom/cjs/react-dom.development.js:21587:16\n ❯ beginWork$1 node_modules/react-dom/cjs/react-dom.development.js:27426:14\n ❯ performUnitOfWork node_modules/react-dom/cjs/react-dom.development.js:26560:12\n ❯ workLoopSync node_modules/react-dom/cjs/react-dom.development.js:26466:5\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n\nhttps://on.cypress.io/api/task\n    at <unknown> (http://localhost:3000/__cypress/runner/cypress_runner.js:145912:78)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:11318:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:9253:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:9310:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:9355:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:9431:18)\n    at _drainQueueStep (http://localhost:3000/__cypress/runner/cypress_runner.js:6025:12)\n    at _drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:6018:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:6034:5)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:5904:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/support/commands.js:26:45)\n\nFrom Node.js Internals:\n  Error: Command failed: npm run cy-coverage ./src\n  stderr | src/tests/App.test.tsx > Farewell, front-end\n  Error: Uncaught [Error: useRoutes() may be used only in the context of a <Router> component.]\n      at reportException (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)\n      at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)\n      at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n      at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n      at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n      at HTMLUnknownElement.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)\n      at Object.invokeGuardedCallbackDev (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4213:16)\n      at invokeGuardedCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4277:31)\n      at beginWork$1 (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:27451:7)\n  at performUnitOfWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:26560:12) Error: useRoutes() may be used only in the context of a <Router> component.\n  at Object.invariant [as UNSAFE_invariant] (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/@remix-run/router/history.ts:480:11)\n  at useRoutesImpl (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/hooks.tsx:350:3)\n  at useRoutes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/hooks.tsx:341:10)\n  at Routes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/components.tsx:463:10)\n  at renderWithHooks (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:16305:18)\n  at mountIndeterminateComponent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:20074:13)\n  at beginWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:21587:16)\n  at HTMLUnknownElement.callCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4164:14)\n  at HTMLUnknownElement.callTheUserObjectsOperation (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)\n  at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)\n  Error: Uncaught [Error: useRoutes() may be used only in the context of a <Router> component.]\n      at reportException (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)\n      at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)\n      at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n      at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n      at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n      at HTMLUnknownElement.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)\n      at Object.invokeGuardedCallbackDev (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4213:16)\n      at invokeGuardedCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4277:31)\n      at beginWork$1 (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:27451:7)\n  at performUnitOfWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:26560:12) Error: useRoutes() may be used only in the context of a <Router> component.\n  at Object.invariant [as UNSAFE_invariant] (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/@remix-run/router/history.ts:480:11)\n  at useRoutesImpl (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/hooks.tsx:350:3)\n  at useRoutes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/hooks.tsx:341:10)\n  at Routes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/components.tsx:463:10)\n  at renderWithHooks (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:16305:18)\n  at mountIndeterminateComponent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:20074:13)\n  at beginWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:21587:16)\n  at HTMLUnknownElement.callCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4164:14)\n  at HTMLUnknownElement.callTheUserObjectsOperation (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)\n  at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)\n  The above error occurred in the <Routes> component:\n  \n      at Routes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/dist/umd/react-router.development.js:1147:7)\n  at App\n  \n  Consider adding an error boundary to your tree to customize error handling behavior.\n  Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.\n  \n  ⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯\n  \n   FAIL  src/tests/App.test.tsx > Farewell, front-end\n  Error: useRoutes() may be used only in the context of a <Router> component.\n   ❯ Object.invariant [as UNSAFE_invariant] node_modules/@remix-run/router/history.ts:480:11\n   ❯ useRoutesImpl node_modules/react-router/lib/hooks.tsx:350:3\n   ❯ useRoutes node_modules/react-router/lib/hooks.tsx:341:10\n   ❯ Routes node_modules/react-router/lib/components.tsx:463:10\n   ❯ renderWithHooks node_modules/react-dom/cjs/react-dom.development.js:16305:18\n   ❯ mountIndeterminateComponent node_modules/react-dom/cjs/react-dom.development.js:20074:13\n   ❯ beginWork node_modules/react-dom/cjs/react-dom.development.js:21587:16\n   ❯ beginWork$1 node_modules/react-dom/cjs/react-dom.development.js:27426:14\n   ❯ performUnitOfWork node_modules/react-dom/cjs/react-dom.development.js:26560:12\n   ❯ workLoopSync node_modules/react-dom/cjs/react-dom.development.js:26466:5\n  \n  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n  \n  \n      at ChildProcess.exithandler (node:child_process:419:12)\n      at ChildProcess.emit (node:events:513:28)\n      at ChildProcess.emit (node:domain:489:12)\n      at maybeClose (node:internal/child_process:1091:16)\n      at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5)",
+                "diff": null
+              },
+              "uuid": "4c345aec-1be1-4d1d-a015-40a0526e6a3a",
+              "parentUUID": "9ba686b1-7341-46c8-8833-e256f9eb9dc9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "47bdfe2e-00c6-4fa3-966a-30e5d53f2308",
+            "b2aec0e6-cb52-4714-99c9-353bda031281",
+            "4c345aec-1be1-4d1d-a015-40a0526e6a3a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 14487,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "94a32a1e-79e6-4014-bc8a-cecad8acda82",
+          "title": "17 - Exiba o menu inferior apenas nas telas indicadas pelo protótipo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Rota \"/\": não deve ter footer",
+              "fullTitle": "17 - Exiba o menu inferior apenas nas telas indicadas pelo protótipo Rota \"/\": não deve ter footer",
+              "timedOut": null,
+              "duration": 831,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/');\nhasNoFooter();",
+              "err": {},
+              "uuid": "a2b6a33f-ae30-4575-8aa9-530e92b05c67",
+              "parentUUID": "94a32a1e-79e6-4014-bc8a-cecad8acda82",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Rota \"/meals\": deve ter footer",
+              "fullTitle": "17 - Exiba o menu inferior apenas nas telas indicadas pelo protótipo Rota \"/meals\": deve ter footer",
+              "timedOut": null,
+              "duration": 10637,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "visitWithLocalStorage('http://localhost:3000/meals');\nhasFooter();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid=\"footer\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid=\"footer\"]`, but never found it.\n    at hasFooter (webpack:///./cypress/e2e/16-18.footer.cy.js:39:7)\n    at Context.eval (webpack:///./cypress/e2e/16-18.footer.cy.js:64:4)",
+                "diff": null
+              },
+              "uuid": "312aee7c-63b7-47b8-8947-fc6175705998",
+              "parentUUID": "94a32a1e-79e6-4014-bc8a-cecad8acda82",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Rota \"/drinks\": deve ter footer",
+              "fullTitle": "17 - Exiba o menu inferior apenas nas telas indicadas pelo protótipo Rota \"/drinks\": deve ter footer",
+              "timedOut": null,
+              "duration": 10973,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "visitWithLocalStorage('http://localhost:3000/drinks');\nhasFooter();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid=\"footer\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid=\"footer\"]`, but never found it.\n    at hasFooter (webpack:///./cypress/e2e/16-18.footer.cy.js:39:7)\n    at Context.eval (webpack:///./cypress/e2e/16-18.footer.cy.js:70:4)",
+                "diff": null
+              },
+              "uuid": "6e296bb7-68ca-476e-aa30-49d794b77c3a",
+              "parentUUID": "94a32a1e-79e6-4014-bc8a-cecad8acda82",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Rota \"/meals/{id-da-receita}\": não deve ter footer",
+              "fullTitle": "17 - Exiba o menu inferior apenas nas telas indicadas pelo protótipo Rota \"/meals/{id-da-receita}\": não deve ter footer",
+              "timedOut": null,
+              "duration": 682,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "visitWithLocalStorage('http://localhost:3000/meals/52771');\nhasNoFooter();",
+              "err": {},
+              "uuid": "b97bbcdc-870d-444e-ae01-e1d42c49a59f",
+              "parentUUID": "94a32a1e-79e6-4014-bc8a-cecad8acda82",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Rota \"drinks/{id-da-receita}\": não deve ter footer",
+              "fullTitle": "17 - Exiba o menu inferior apenas nas telas indicadas pelo protótipo Rota \"drinks/{id-da-receita}\": não deve ter footer",
+              "timedOut": null,
+              "duration": 728,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "visitWithLocalStorage('http://localhost:3000/drinks/178319');\nhasNoFooter();",
+              "err": {},
+              "uuid": "e80efc93-ae92-4a9c-a537-da0c915bd47e",
+              "parentUUID": "94a32a1e-79e6-4014-bc8a-cecad8acda82",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Rota \"/meals/{id-da-receita}/in-progress\": não deve ter footer",
+              "fullTitle": "17 - Exiba o menu inferior apenas nas telas indicadas pelo protótipo Rota \"/meals/{id-da-receita}/in-progress\": não deve ter footer",
+              "timedOut": null,
+              "duration": 826,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "visitWithLocalStorage('http://localhost:3000/meals/52771/in-progress');\nhasNoFooter();",
+              "err": {},
+              "uuid": "87524042-c35f-4513-b8de-995eefa727e3",
+              "parentUUID": "94a32a1e-79e6-4014-bc8a-cecad8acda82",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Rota \"/drinks/{id-da-receita}/in-progress\": não deve ter footer",
+              "fullTitle": "17 - Exiba o menu inferior apenas nas telas indicadas pelo protótipo Rota \"/drinks/{id-da-receita}/in-progress\": não deve ter footer",
+              "timedOut": null,
+              "duration": 641,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "visitWithLocalStorage('http://localhost:3000/drinks/178319/in-progress');\nhasNoFooter();",
+              "err": {},
+              "uuid": "48a012db-37ec-4b72-a978-ebc96bd91425",
+              "parentUUID": "94a32a1e-79e6-4014-bc8a-cecad8acda82",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Rota \"/profile\": deve ter footer",
+              "fullTitle": "17 - Exiba o menu inferior apenas nas telas indicadas pelo protótipo Rota \"/profile\": deve ter footer",
+              "timedOut": null,
+              "duration": 10650,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "visitWithLocalStorage('http://localhost:3000/profile');\nhasFooter();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid=\"footer\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid=\"footer\"]`, but never found it.\n    at hasFooter (webpack:///./cypress/e2e/16-18.footer.cy.js:39:7)\n    at Context.eval (webpack:///./cypress/e2e/16-18.footer.cy.js:100:4)",
+                "diff": null
+              },
+              "uuid": "91817bb6-a297-41ed-a215-97f9734c7687",
+              "parentUUID": "94a32a1e-79e6-4014-bc8a-cecad8acda82",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Rota \"/done-recipes\": não deve ter footer",
+              "fullTitle": "17 - Exiba o menu inferior apenas nas telas indicadas pelo protótipo Rota \"/done-recipes\": não deve ter footer",
+              "timedOut": null,
+              "duration": 702,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "visitWithLocalStorage('http://localhost:3000/done-recipes');\nhasNoFooter();",
+              "err": {},
+              "uuid": "12ccd665-3bb4-4d9f-99e9-51b657d73c32",
+              "parentUUID": "94a32a1e-79e6-4014-bc8a-cecad8acda82",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Rota \"/favorite-recipes\": não deve ter footer",
+              "fullTitle": "17 - Exiba o menu inferior apenas nas telas indicadas pelo protótipo Rota \"/favorite-recipes\": não deve ter footer",
+              "timedOut": null,
+              "duration": 748,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "visitWithLocalStorage('http://localhost:3000/favorite-recipes');\nhasNoFooter();",
+              "err": {},
+              "uuid": "200f4ece-f5d8-4818-a545-3c1eee2ff563",
+              "parentUUID": "94a32a1e-79e6-4014-bc8a-cecad8acda82",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a2b6a33f-ae30-4575-8aa9-530e92b05c67",
+            "b97bbcdc-870d-444e-ae01-e1d42c49a59f",
+            "e80efc93-ae92-4a9c-a537-da0c915bd47e",
+            "87524042-c35f-4513-b8de-995eefa727e3",
+            "48a012db-37ec-4b72-a978-ebc96bd91425",
+            "12ccd665-3bb4-4d9f-99e9-51b657d73c32",
+            "200f4ece-f5d8-4818-a545-3c1eee2ff563"
+          ],
+          "failures": [
+            "312aee7c-63b7-47b8-8947-fc6175705998",
+            "6e296bb7-68ca-476e-aa30-49d794b77c3a",
+            "91817bb6-a297-41ed-a215-97f9734c7687"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 37418,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "c878b7f9-d300-4b46-a4d3-bceaa2d0671c",
+          "title": "18 - Redirecione a pessoa usuária para a tela correta ao clicar em cada ícone no menu inferior",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Redireciona para a lista de bebidas ao clicar no ícone de bebidas",
+              "fullTitle": "18 - Redirecione a pessoa usuária para a tela correta ao clicar em cada ícone no menu inferior Redireciona para a lista de bebidas ao clicar no ícone de bebidas",
+              "timedOut": null,
+              "duration": 10696,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/meals');\ncy.get('[data-testid=\"drinks-bottom-btn\"]').click();\ncy.location().should(loc => expect(loc.pathname).to.eq('/drinks'));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid=\"drinks-bottom-btn\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid=\"drinks-bottom-btn\"]`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/16-18.footer.cy.js:121:7)",
+                "diff": null
+              },
+              "uuid": "ca2023e4-33fd-4f84-ba73-d8651ed76cea",
+              "parentUUID": "c878b7f9-d300-4b46-a4d3-bceaa2d0671c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Redireciona para a lista de comidas ao clicar no ícone de comidas",
+              "fullTitle": "18 - Redirecione a pessoa usuária para a tela correta ao clicar em cada ícone no menu inferior Redireciona para a lista de comidas ao clicar no ícone de comidas",
+              "timedOut": null,
+              "duration": 10784,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/drinks');\ncy.get('[data-testid=\"meals-bottom-btn\"]').click();\ncy.location().should(loc => expect(loc.pathname).to.eq('/meals'));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid=\"meals-bottom-btn\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid=\"meals-bottom-btn\"]`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/16-18.footer.cy.js:128:7)",
+                "diff": null
+              },
+              "uuid": "a6cbc110-f157-4fe7-b4f6-78258f507007",
+              "parentUUID": "c878b7f9-d300-4b46-a4d3-bceaa2d0671c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica a cobertura de 90% do Componente Footer",
+              "fullTitle": "18 - Redirecione a pessoa usuária para a tela correta ao clicar em cada ícone no menu inferior Verifica a cobertura de 90% do Componente Footer",
+              "timedOut": null,
+              "duration": 10871,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.getCoverage().its('Footer.functions.pct', {\n  timeout: 0\n}).should('be.gte', 90.00);\ncy.getCoverage().its('Footer.branches.pct', {\n  timeout: 0\n}).should('be.gte', 90.00);",
+              "err": {
+                "message": "CypressError: `cy.task('getCoverage')` failed with the following error:\n\n> Command failed: npm run cy-coverage ./src\nstderr | src/tests/App.test.tsx > Farewell, front-end\nError: Uncaught [Error: useRoutes() may be used only in the context of a <Router> component.]\n    at reportException (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)\n    at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n    at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n    at HTMLUnknownElement.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)\n    at Object.invokeGuardedCallbackDev (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4213:16)\n    at invokeGuardedCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4277:31)\n    at beginWork$1 (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:27451:7)\n    at performUnitOfWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:26560:12) Error: useRoutes() may be used only in the context of a <Router> component.\n    at Object.invariant [as UNSAFE_invariant] (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/@remix-run/router/history.ts:480:11)\n    at useRoutesImpl (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/hooks.tsx:350:3)\n    at useRoutes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/hooks.tsx:341:10)\n    at Routes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/components.tsx:463:10)\n    at renderWithHooks (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:16305:18)\n    at mountIndeterminateComponent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:20074:13)\n    at beginWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:21587:16)\n    at HTMLUnknownElement.callCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4164:14)\n    at HTMLUnknownElement.callTheUserObjectsOperation (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)\nError: Uncaught [Error: useRoutes() may be used only in the context of a <Router> component.]\n    at reportException (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)\n    at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n    at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n    at HTMLUnknownElement.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)\n    at Object.invokeGuardedCallbackDev (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4213:16)\n    at invokeGuardedCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4277:31)\n    at beginWork$1 (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:27451:7)\n    at performUnitOfWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:26560:12) Error: useRoutes() may be used only in the context of a <Router> component.\n    at Object.invariant [as UNSAFE_invariant] (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/@remix-run/router/history.ts:480:11)\n    at useRoutesImpl (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/hooks.tsx:350:3)\n    at useRoutes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/hooks.tsx:341:10)\n    at Routes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/components.tsx:463:10)\n    at renderWithHooks (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:16305:18)\n    at mountIndeterminateComponent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:20074:13)\n    at beginWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:21587:16)\n    at HTMLUnknownElement.callCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4164:14)\n    at HTMLUnknownElement.callTheUserObjectsOperation (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)\nThe above error occurred in the <Routes> component:\n\n    at Routes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/dist/umd/react-router.development.js:1147:7)\n    at App\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://reactjs.org/link/error-boundaries to learn more about error boundaries.\n\n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  src/tests/App.test.tsx > Farewell, front-end\nError: useRoutes() may be used only in the context of a <Router> component.\n ❯ Object.invariant [as UNSAFE_invariant] node_modules/@remix-run/router/history.ts:480:11\n ❯ useRoutesImpl node_modules/react-router/lib/hooks.tsx:350:3\n ❯ useRoutes node_modules/react-router/lib/hooks.tsx:341:10\n ❯ Routes node_modules/react-router/lib/components.tsx:463:10\n ❯ renderWithHooks node_modules/react-dom/cjs/react-dom.development.js:16305:18\n ❯ mountIndeterminateComponent node_modules/react-dom/cjs/react-dom.development.js:20074:13\n ❯ beginWork node_modules/react-dom/cjs/react-dom.development.js:21587:16\n ❯ beginWork$1 node_modules/react-dom/cjs/react-dom.development.js:27426:14\n ❯ performUnitOfWork node_modules/react-dom/cjs/react-dom.development.js:26560:12\n ❯ workLoopSync node_modules/react-dom/cjs/react-dom.development.js:26466:5\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n\nhttps://on.cypress.io/api/task",
+                "estack": "CypressError: `cy.task('getCoverage')` failed with the following error:\n\n> Command failed: npm run cy-coverage ./src\nstderr | src/tests/App.test.tsx > Farewell, front-end\nError: Uncaught [Error: useRoutes() may be used only in the context of a <Router> component.]\n    at reportException (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)\n    at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n    at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n    at HTMLUnknownElement.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)\n    at Object.invokeGuardedCallbackDev (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4213:16)\n    at invokeGuardedCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4277:31)\n    at beginWork$1 (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:27451:7)\n    at performUnitOfWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:26560:12) Error: useRoutes() may be used only in the context of a <Router> component.\n    at Object.invariant [as UNSAFE_invariant] (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/@remix-run/router/history.ts:480:11)\n    at useRoutesImpl (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/hooks.tsx:350:3)\n    at useRoutes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/hooks.tsx:341:10)\n    at Routes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/components.tsx:463:10)\n    at renderWithHooks (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:16305:18)\n    at mountIndeterminateComponent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:20074:13)\n    at beginWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:21587:16)\n    at HTMLUnknownElement.callCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4164:14)\n    at HTMLUnknownElement.callTheUserObjectsOperation (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)\nError: Uncaught [Error: useRoutes() may be used only in the context of a <Router> component.]\n    at reportException (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)\n    at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n    at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n    at HTMLUnknownElement.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)\n    at Object.invokeGuardedCallbackDev (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4213:16)\n    at invokeGuardedCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4277:31)\n    at beginWork$1 (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:27451:7)\n    at performUnitOfWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:26560:12) Error: useRoutes() may be used only in the context of a <Router> component.\n    at Object.invariant [as UNSAFE_invariant] (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/@remix-run/router/history.ts:480:11)\n    at useRoutesImpl (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/hooks.tsx:350:3)\n    at useRoutes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/hooks.tsx:341:10)\n    at Routes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/components.tsx:463:10)\n    at renderWithHooks (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:16305:18)\n    at mountIndeterminateComponent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:20074:13)\n    at beginWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:21587:16)\n    at HTMLUnknownElement.callCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4164:14)\n    at HTMLUnknownElement.callTheUserObjectsOperation (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)\n    at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)\nThe above error occurred in the <Routes> component:\n\n    at Routes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/dist/umd/react-router.development.js:1147:7)\n    at App\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://reactjs.org/link/error-boundaries to learn more about error boundaries.\n\n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  src/tests/App.test.tsx > Farewell, front-end\nError: useRoutes() may be used only in the context of a <Router> component.\n ❯ Object.invariant [as UNSAFE_invariant] node_modules/@remix-run/router/history.ts:480:11\n ❯ useRoutesImpl node_modules/react-router/lib/hooks.tsx:350:3\n ❯ useRoutes node_modules/react-router/lib/hooks.tsx:341:10\n ❯ Routes node_modules/react-router/lib/components.tsx:463:10\n ❯ renderWithHooks node_modules/react-dom/cjs/react-dom.development.js:16305:18\n ❯ mountIndeterminateComponent node_modules/react-dom/cjs/react-dom.development.js:20074:13\n ❯ beginWork node_modules/react-dom/cjs/react-dom.development.js:21587:16\n ❯ beginWork$1 node_modules/react-dom/cjs/react-dom.development.js:27426:14\n ❯ performUnitOfWork node_modules/react-dom/cjs/react-dom.development.js:26560:12\n ❯ workLoopSync node_modules/react-dom/cjs/react-dom.development.js:26466:5\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n\nhttps://on.cypress.io/api/task\n    at <unknown> (http://localhost:3000/__cypress/runner/cypress_runner.js:145912:78)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:11318:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:9253:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:9310:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:9355:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:9431:18)\n    at _drainQueueStep (http://localhost:3000/__cypress/runner/cypress_runner.js:6025:12)\n    at _drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:6018:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:6034:5)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:5904:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/support/commands.js:26:45)\n\nFrom Node.js Internals:\n  Error: Command failed: npm run cy-coverage ./src\n  stderr | src/tests/App.test.tsx > Farewell, front-end\n  Error: Uncaught [Error: useRoutes() may be used only in the context of a <Router> component.]\n      at reportException (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)\n      at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)\n      at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n      at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n      at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n      at HTMLUnknownElement.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)\n      at Object.invokeGuardedCallbackDev (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4213:16)\n      at invokeGuardedCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4277:31)\n      at beginWork$1 (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:27451:7)\n  at performUnitOfWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:26560:12) Error: useRoutes() may be used only in the context of a <Router> component.\n  at Object.invariant [as UNSAFE_invariant] (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/@remix-run/router/history.ts:480:11)\n  at useRoutesImpl (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/hooks.tsx:350:3)\n  at useRoutes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/hooks.tsx:341:10)\n  at Routes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/components.tsx:463:10)\n  at renderWithHooks (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:16305:18)\n  at mountIndeterminateComponent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:20074:13)\n  at beginWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:21587:16)\n  at HTMLUnknownElement.callCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4164:14)\n  at HTMLUnknownElement.callTheUserObjectsOperation (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)\n  at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)\n  Error: Uncaught [Error: useRoutes() may be used only in the context of a <Router> component.]\n      at reportException (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)\n      at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)\n      at invokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)\n      at HTMLUnknownElementImpl._dispatch (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)\n      at HTMLUnknownElementImpl.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)\n      at HTMLUnknownElement.dispatchEvent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)\n      at Object.invokeGuardedCallbackDev (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4213:16)\n      at invokeGuardedCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4277:31)\n      at beginWork$1 (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:27451:7)\n  at performUnitOfWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:26560:12) Error: useRoutes() may be used only in the context of a <Router> component.\n  at Object.invariant [as UNSAFE_invariant] (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/@remix-run/router/history.ts:480:11)\n  at useRoutesImpl (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/hooks.tsx:350:3)\n  at useRoutes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/hooks.tsx:341:10)\n  at Routes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/lib/components.tsx:463:10)\n  at renderWithHooks (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:16305:18)\n  at mountIndeterminateComponent (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:20074:13)\n  at beginWork (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:21587:16)\n  at HTMLUnknownElement.callCallback (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-dom/cjs/react-dom.development.js:4164:14)\n  at HTMLUnknownElement.callTheUserObjectsOperation (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)\n  at innerInvokeEventListeners (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)\n  The above error occurred in the <Routes> component:\n  \n      at Routes (/home/marcelo/trybe/Projetos/projetos/frontend/sd-032-a-project-recipes-app-ts/node_modules/react-router/dist/umd/react-router.development.js:1147:7)\n  at App\n  \n  Consider adding an error boundary to your tree to customize error handling behavior.\n  Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.\n  \n  ⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯\n  \n   FAIL  src/tests/App.test.tsx > Farewell, front-end\n  Error: useRoutes() may be used only in the context of a <Router> component.\n   ❯ Object.invariant [as UNSAFE_invariant] node_modules/@remix-run/router/history.ts:480:11\n   ❯ useRoutesImpl node_modules/react-router/lib/hooks.tsx:350:3\n   ❯ useRoutes node_modules/react-router/lib/hooks.tsx:341:10\n   ❯ Routes node_modules/react-router/lib/components.tsx:463:10\n   ❯ renderWithHooks node_modules/react-dom/cjs/react-dom.development.js:16305:18\n   ❯ mountIndeterminateComponent node_modules/react-dom/cjs/react-dom.development.js:20074:13\n   ❯ beginWork node_modules/react-dom/cjs/react-dom.development.js:21587:16\n   ❯ beginWork$1 node_modules/react-dom/cjs/react-dom.development.js:27426:14\n   ❯ performUnitOfWork node_modules/react-dom/cjs/react-dom.development.js:26560:12\n   ❯ workLoopSync node_modules/react-dom/cjs/react-dom.development.js:26466:5\n  \n  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n  \n  \n      at ChildProcess.exithandler (node:child_process:419:12)\n      at ChildProcess.emit (node:events:513:28)\n      at ChildProcess.emit (node:domain:489:12)\n      at maybeClose (node:internal/child_process:1091:16)\n      at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5)",
+                "diff": null
+              },
+              "uuid": "39814611-fd2d-4743-b15e-f1f35c4bb591",
+              "parentUUID": "c878b7f9-d300-4b46-a4d3-bceaa2d0671c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "ca2023e4-33fd-4f84-ba73-d8651ed76cea",
+            "a6cbc110-f157-4fe7-b4f6-78258f507007",
+            "39814611-fd2d-4743-b15e-f1f35c4bb591"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 32351,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
